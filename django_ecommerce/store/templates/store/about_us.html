@@ -1,0 +1,33 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">About Saru</h1>
+    <p class="text-center"><em>More than just a store</em></p>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Who We Are</h2>
+            <p>At Saru, we believe in providing a one-stop shopping experience for our customers. From stylish garments and trendy footwear to the latest electronics, we offer a wide range of high-quality products to meet all your needs.</p>
+            <p>Our mission is to deliver exceptional value and quality, ensuring that our customers find exactly what they're looking for, all in one place.</p>
+            <a href="{% url 'product_list' %}" class="btn btn-primary mt-3">Explore Our Products</a>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/about_us.jpg' %}" class="img-fluid rounded" alt="About Saru">
+        </div>
+    </div>
+    
+    <hr class="my-5">
+
+    <h2 class="text-center">Our Values</h2>
+    <ul class="list-unstyled text-center">
+        <li><strong>Quality:</strong> We prioritize offering products that stand the test of time.</li>
+        <li><strong>Diversity:</strong> A wide range of categories to cater to every customer's needs.</li>
+        <li><strong>Customer Satisfaction:</strong> Your happiness is our success.</li>
+        <li><strong>Integrity:</strong> We operate with transparency and respect for our customers.</li>
+    </ul>
+    
+</div>
+{% endblock %}
